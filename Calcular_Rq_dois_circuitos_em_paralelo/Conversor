@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+  float e_resistencia_R1, e_resistencia_R2, s_resistencia_equivalente, s_resistencia_equivalente_1;
+
+  printf("Entre com o valor da Resistência R1:\n");
+  scanf("%f", &e_resistencia_R1);
+
+  printf("Entre com o valor da Resisstência R2:\n");
+  scanf("%f", &e_resistencia_R2);
+
+  s_resistencia_equivalente_1 = 1 / e_resistencia_R1 + 1 / e_resistencia_R2;
+
+  s_resistencia_equivalente = 1 / s_resistencia_equivalente_1;
+
+  printf("O valor da Resistência Equivalente é: %.2f", s_resistencia_equivalente);
+
+  return 0;
+}
