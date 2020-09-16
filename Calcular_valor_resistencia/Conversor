@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+  float e_tensao, e_corrente, s_resistencia;
+
+  printf("Entre com o valor de Tensão [V]:\n");
+  scanf("%f", &e_tensao);
+
+  printf("Entre com o valor de Corrente [I]:\n");
+  scanf("%f", &e_corrente);
+
+  s_resistencia = e_tensao / e_corrente;
+
+  printf("O valor da resistência [Ohm] é: %.3f", s_resistencia);
+  
+  return 0;
+}
