@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  //definicao de variaveis
+  float e_polegada, s_milimetros;
+
+  printf("Entre com o valor em polegada:\n");
+  scanf("%f", &e_polegada);
+
+  s_milimetros = 25.4 * e_polegada;
+
+  printf("O valor em milimetros é: %.2f\n", s_milimetros);
+
+  return 0;
+}
