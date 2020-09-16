@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+  //definicao de variaveis
+  float e_graus, s_fahrenheit_2, s_fahrenheit_1, s_fahrenheit;
+
+  printf("Entre com a temperatura em Graus Celsius[ºC]:\n");
+  scanf("%f", &e_graus);
+
+  s_fahrenheit_2 = e_graus * 9;
+  s_fahrenheit_1 = s_fahrenheit_2 / 5;
+  s_fahrenheit = s_fahrenheit_1 + 32;
+
+  printf("A temperatura em Fahrenheit[ºF] é: %.1f", s_fahrenheit);
+
+  return 0;
+}
