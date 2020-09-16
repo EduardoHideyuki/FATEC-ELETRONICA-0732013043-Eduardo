@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+  float e_base, e_altura, s_area;
+
+  printf("Entre com o valor da base do retângulo:\n");
+  scanf("%f", &e_base);
+
+  printf("Entre com o valor da altura do retangulo:\n");
+  scanf("%f", &e_altura);
+
+  s_area = e_base * e_altura;
+
+  printf("O valor da Area é: %.2f\n", s_area);
+
+  return 0;
+}
