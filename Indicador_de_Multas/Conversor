@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+  
+  float e_velocidade_automovel, e_velocidade_via_1, e_velocidade_via;
+
+  printf("Qual o limite de velocidade da via?\n");
+  scanf("%f", &e_velocidade_via_1);
+
+  printf("Qual a velocidade do automóvel?\n");
+  scanf("%f", &e_velocidade_automovel);
+
+
+
+  if (e_velocidade_via_1 > 100){
+
+    e_velocidade_via = 1.07 * e_velocidade_via_1;
+
+  }else{
+
+    e_velocidade_via = e_velocidade_via_1 + 7;
+
+  } 
+  
+  
+
+  if (e_velocidade_automovel <= e_velocidade_via){
+
+    printf("Sem multa, 0 pontos.");
+
+  }else{ 
+
+    if (e_velocidade_automovel <= 1.1 * e_velocidade_via){
+
+      printf("Multa leve, 3 pontos.");
+
+    }else{
+
+      if (e_velocidade_automovel <= 1.2 * e_velocidade_via){
+
+        printf("Multa grave, 5 pontos.");
+
+      }else{
+          printf("Multa gravíssima, 7 pontos.");
+        
+      }
+    }
+  
+
+  }
+
+  return 0;
+}
