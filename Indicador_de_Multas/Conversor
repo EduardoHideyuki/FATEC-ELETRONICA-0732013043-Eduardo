@@ -4,12 +4,12 @@ int main()
 {
   
 //Fluxograma: declaracao de variaveis : Inicio
-  float e_velocidade_automovel, e_velocidade_max_via_1, e_velocidade_max_via;
+  float e_velocidade_automovel, e_velocidade_max_via;
 //Fluxograma: declaracao de variaveis : Fim
 
 //Fluxograma: Entrada de dados : Inicio
   printf("Qual o limite de velocidade da via?\n");
-  scanf("%f", &e_velocidade_max_via_1);
+  scanf("%f", &e_velocidade_max_via);
 //Fluxograma: Entrada de dados : Fim
 
 //Fluxograma: Entrada de dados : Inicio
@@ -18,11 +18,11 @@ int main()
 //Fluxograma: Entrada de dados : Fim
 
 //Fluxograma: Desvio : Inicio
-  if (e_velocidade_max_via_1 > 100)// Se a condicao: e_velocidade_via_1 é menor que 100 ?
+  if (e_velocidade_max_via > 100)// Se a condicao: e_velocidade_via_1 é menor que 100 ?
   { // Se sim:
-      e_velocidade_max_via = 1.07 * e_velocidade_max_via_1;
+      e_velocidade_max_via = 1.07 * e_velocidade_max_via;
   }else{ // Se não:
-      e_velocidade_max_via = e_velocidade_max_via_1 + 7;
+      e_velocidade_max_via = e_velocidade_max_via + 7;
 } 
 //Fluxograma: Desvio : Fim  
   
