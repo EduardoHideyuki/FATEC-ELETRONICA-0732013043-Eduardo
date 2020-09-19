@@ -1,55 +1,42 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main() 
 {
   
-  float e_velocidade_automovel, e_velocidade_via_1, e_velocidade_via;
+//Fluxograma: declaracao de variaveis : Inicio
+  float e_velocidade_automovel, e_velocidade_max_via_1, e_velocidade_max_via;
+//Fluxograma: declaracao de variaveis : Fim
 
+//Fluxograma: Entrada de dados : Inicio
   printf("Qual o limite de velocidade da via?\n");
-  scanf("%f", &e_velocidade_via_1);
+  scanf("%f", &e_velocidade_max_via_1);
+//Fluxograma: Entrada de dados : Fim
 
+//Fluxograma: Entrada de dados : Inicio
   printf("Qual a velocidade do automóvel?\n");
   scanf("%f", &e_velocidade_automovel);
+//Fluxograma: Entrada de dados : Fim
 
-
-
-  if (e_velocidade_via_1 > 100){
-
-    e_velocidade_via = 1.07 * e_velocidade_via_1;
-
+//Fluxograma: Desvio : Inicio
+  if (e_velocidade_max_via_1 > 100)// Se a condicao: e_velocidade_via_1 é menor que 100 ?
+  { // Se sim:
+      e_velocidade_max_via = 1.07 * e_velocidade_max_via_1;
+  }else{ // Se não:
+      e_velocidade_max_via = e_velocidade_max_via_1 + 7;
+} 
+//Fluxograma: Desvio : Fim  
+  
+//Fluxograma: Desvio : Inicio
+  if (e_velocidade_automovel < e_velocidade_max_via) // Se a condicao: e_velocidade_automovel é menor que a e_velocidade_max_via
+  { // Se sim:
+    printf("Sem multa, 0 pontos.\n");
+  }else if ( (e_velocidade_automovel > e_velocidade_max_via) && (e_velocidade_automovel <= (1.1*e_velocidade_max_via) ) ) {
+      printf("Multa leve, 3 pontos.\n");
+  }else if ( (e_velocidade_automovel > (1.1 * e_velocidade_max_via)) && ( e_velocidade_automovel <= (1.2 * e_velocidade_max_via) ) ) {
+      printf("Multa grave, 5 pontos.\n");
   }else{
-
-    e_velocidade_via = e_velocidade_via_1 + 7;
-
-  } 
-  
-  
-
-  if (e_velocidade_automovel <= e_velocidade_via){
-
-    printf("Sem multa, 0 pontos.");
-
-  }else{ 
-
-    if (e_velocidade_automovel <= 1.1 * e_velocidade_via){
-
-      printf("Multa leve, 3 pontos.");
-
-    }else{
-
-      if (e_velocidade_automovel <= 1.2 * e_velocidade_via){
-
-        printf("Multa grave, 5 pontos.");
-
-      }else{
-          printf("Multa gravíssima, 7 pontos.");
-        
-      }
-    }
-  
-
+      printf("Multa gravíssima, 7 pontos.\n");
   }
-
-  return 0;
+    
+ return 0;
 }
