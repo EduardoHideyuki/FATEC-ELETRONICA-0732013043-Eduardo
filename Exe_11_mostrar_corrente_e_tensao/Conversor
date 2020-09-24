@@ -1,1 +1,57 @@
+#include <stdio.h>
 
+int main(void) 
+{
+
+//Fluxograma: Declaração de variaveis: Início
+  float e_resistencia_r1, e_resistencia_r2, resistencia_equivalente, corrente_e1, s_corrente_r1, s_corrente_r2, s_tensao_r1, s_tensao_r2, e_tensao_e1;
+//Fluxograma: Declaração de variaveis: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Qual o valor da tensão E1?\n");
+  scanf("%f", &e_tensao_e1);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Qual o valor da resistência R1?\n");
+  scanf("%f", &e_resistencia_r1);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Qual o valor da resistência R2?\n");
+  scanf("%f", &e_resistencia_r2);
+//Fluxograma: Entrada de dados: Fim  
+
+//Fluxograma: Processo de desenvolvimento: Início
+  resistencia_equivalente = e_resistencia_r1 + e_resistencia_r2;
+//Fluxograma: Processo de desenvolvimento: Fim
+
+//Fluxograma: Desvio: Início
+  if (resistencia_equivalente > 0)//Se a condição: resistencia equivalente é maior que 0 ? 
+  {//Se sim:
+    corrente_e1 = e_tensao_e1 / resistencia_equivalente;
+  }else{//Se não:
+    printf("Não pode ser calculado corretamente");
+  }
+//Fluxograma: Desvio: Fim
+
+//Fluxograma: Processo de desenvolvimento: Início
+  s_corrente_r1 = corrente_e1;
+  s_corrente_r2 = corrente_e1;
+//Fluxograma: Processo de desenvolvimento: Fim
+
+//Fluxograma: Processo de desenvolvimento: Início
+  s_tensao_r1 = e_resistencia_r1 * s_corrente_r1;
+  s_tensao_r2 = e_resistencia_r2 * s_corrente_r2;
+//Fluxograma: Processo de desenvolvimento: Fim
+
+//Fluxograma: Conclusão: Início
+  printf("Resistor R1: Corrente: %.2f\t Tensão: %.2f\n", s_corrente_r1, s_tensao_r1);
+//Fluxograma: Conclusão: Fim
+
+//Fluxograma: Conclusão: Início
+  printf("Resistor R2: Coreente: %.2f\t Tensão: %.2f\n", s_corrente_r2, s_tensao_r2);
+//Fluxograma: Conclusão: Fim
+
+  return 0;
+}
