@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+  
+//Fluxograma: Definição de variaveis: Inicio
+  float e_a, e_a_1, e_b, e_b_1;
+//Fluxograma: Definição de variaveis: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Qual o valor da variavel A?\n");
+  scanf("%f", &e_a);
+
+  printf("Qual o valor da variavel B:\n");
+  scanf("%f", &e_b);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Processamento troca de conteúdo: Início
+  e_a_1 = e_b;
+  e_b_1 = e_a;
+//Fluxograma: Processamento troca de conteudo: Fim
+
+//Fluxograma: Conclusão: Início
+  printf("A: %.2f\t %.2f\n", e_a, e_a_1);
+  printf("A: %.2f\t %.2f\n", e_b, e_b_1);
+//Fluxograma: Conclusão: Fim
+
+  return 0;
+}
