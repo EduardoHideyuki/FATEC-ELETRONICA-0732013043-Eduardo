@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main()
+{
+
+//Fluxograma: Declaração de variaveis: Início
+  float e_nmr_1, e_nmr_2, e_nmr_3, s_nmr_1, s_nmr_2, s_nmr_3;
+//Fluxograma: Declaração de variaveis: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Qual o valor do número 1?\n");
+  scanf("%f", &e_nmr_1);
+//FLuxograma: Entrada de dados: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Qual o valor do número 2?\n");
+  scanf("%f", &e_nmr_2);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Qual o valor do numero 3?\n");
+  scanf("%f", &e_nmr_3);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Desvio: Inicio
+  if (e_nmr_1 > e_nmr_2)//Se a condição: número 1 é maior que o número 2?:
+  {//Se sim:
+    if (e_nmr_2 > e_nmr_3)//Se a condição: número 2 é maior que o número 3?:
+    {//Se sim:
+      s_nmr_1 = e_nmr_1;
+      s_nmr_2 = e_nmr_2;
+      s_nmr_3 = e_nmr_3;
+
+    }else if (e_nmr_1 > e_nmr_3)//Se a condição: número 1 é maior que o número 3?:
+    {//Se sim:
+      s_nmr_1 = e_nmr_1;
+      s_nmr_2 = e_nmr_3;
+      s_nmr_3 = e_nmr_2;
+    }else{//Se não:
+      s_nmr_1 = e_nmr_3;
+      s_nmr_2 = e_nmr_1;
+      s_nmr_3 = e_nmr_2;
+      }
+  }else if (e_nmr_1 > e_nmr_3)//Se a condição: número 1 é maior que o número 3?:
+  {//Se sim:
+    s_nmr_1 = e_nmr_2;
+    s_nmr_2 = e_nmr_1;
+    s_nmr_3 = e_nmr_3;
+    }else if (e_nmr_2 > e_nmr_3)//Se a condição: número 2 é maior que o númeor 3?:
+    {//Se sim:
+      s_nmr_1 = e_nmr_2;
+      s_nmr_2 = e_nmr_3;
+      s_nmr_3 = e_nmr_1;
+    }else{//Se não:
+      s_nmr_1 = e_nmr_3;
+      s_nmr_2 = e_nmr_2;
+      s_nmr_3 = e_nmr_1;
+    }
+//Fluxograma: Desvio: Fim
+
+//Fluxograma: Conclusão: Início
+  printf(" A ordem decrescente é: %.2f < %.2f < %.2f\n", s_nmr_1, s_nmr_2, s_nmr_3);
+//Fluxograma: Conclusão: Fim
+
+  return 0;
+}
