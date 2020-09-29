@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() 
+{
+
+//Fluxograma: Derivação de variaveis: Início
+  float e_altura, e_sexo, peso_ideal;
+//Fluxograma: Derivação de variaveis: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Informe a altura: [Metros]\n");
+  scanf("%f", &e_altura);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Utilize 0 para feminino e 1 para masculino!\n");
+  printf("Informe seu sexo:\n");
+  scanf("%f", &e_sexo);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Desvio: Início
+  if (e_sexo == 0)//Se a condição: Sexo é igual a feminino?:
+  {//Se sim:
+    peso_ideal = (62.1 * e_altura) - 44.7;
+    }else if (e_sexo == 1)//Se a condição: Sexo é igual a masculino?:
+    {//Se sim:
+      peso_ideal = (72.7 * e_altura) - 58;
+      }else {//Se não:
+        printf("Número do sexo invalido\n");
+        }
+//Fluxograma: Desvio: Fim
+
+//Fluxograma: Conclusão: Início
+  printf("O seu peso ideal é: %.3f\n", peso_ideal);
+//Fluxograma: Conclusão: Fim
+
+  return 0;
+}
