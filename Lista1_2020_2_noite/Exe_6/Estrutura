@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-12T21:30:23.866Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36 Edg/86.0.622.38" etag="PKal6zX4i0zla-XqAY_V" version="13.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-12T22:52:20.950Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36 Edg/86.0.622.38" etag="pamW4XwKnexMjkDoxRjF" version="13.7.7" type="github">
   <diagram id="Kudlh3Xm04O-F3uWIiMt" name="Page-1">
-    <mxGraphModel dx="4520" dy="1500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1355" dy="214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,7 +52,7 @@
         <mxCell id="IDeZvZMVi1FQ799LXLrM-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IDeZvZMVi1FQ799LXLrM-20" target="IDeZvZMVi1FQ799LXLrM-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="IDeZvZMVi1FQ799LXLrM-20" value="fio_area = ((fio_diametro / 2) * (fio_diametro / 2)) * 3.14159265358979323846" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="IDeZvZMVi1FQ799LXLrM-20" value="fio_area = (pow((fio_diametro / 2),2)) * 3.14159265358979323846" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="245" y="490" width="170" height="50" as="geometry" />
         </mxCell>
         <mxCell id="IDeZvZMVi1FQ799LXLrM-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IDeZvZMVi1FQ799LXLrM-23" target="IDeZvZMVi1FQ799LXLrM-26">
