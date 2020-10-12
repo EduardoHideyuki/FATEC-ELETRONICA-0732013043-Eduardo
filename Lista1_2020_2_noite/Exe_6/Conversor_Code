@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) 
+{
+
+//Fluxograma: Definição de variaveis: Início
+  float fio_diametro, fio_comprimento, e_temperatura, resistividade, s_resistencia, e_material, fio_area;
+//Fluxograma: Definição de variaveis: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Qual o comrpimento do fio? [Cm]\n");
+  scanf("%f", &fio_comprimento);
+
+  printf("Qual o diametro do fio? [Cm]\n");
+  scanf("%f", &fio_diametro);
+
+  printf("Qual a temperatura?\n");
+  scanf("%f", &e_temperatura);
+
+  printf("1 - Prata\n 2 - Cobre\n 3 - Ouro\n 4 - Alumínio\n 5 - tungstenio\n");
+  printf("Qual o material?\n");
+  scanf("%f", &e_material);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Processo desenvolvimento: Início
+  fio_area = (pow((fio_diametro / 2),2)) * 3.14159265358979323846;
+
+  if (e_material == 1){
+    resistividade = (1.59*(pow(10,-6))) * (1+(0.038*(e_temperatura - 20)));
+    s_resistencia = resistividade * (fio_comprimento / fio_area);
+    printf("Resistencia: %.9f Ohm", s_resistencia);
+  }else if (e_material == 2){
+    resistividade = (1.72*(pow(10,-6))) * (1+(0.039*(e_temperatura - 20)));
+    s_resistencia = resistividade * (fio_comprimento / fio_area);
+    printf("Resistencia: %.9f Ohm", s_resistencia);
+  }else if (e_material == 3){
+    resistividade = (2.44*(pow(10,-6))) * (1+(0.034*(e_temperatura - 20)));
+    s_resistencia = resistividade * (fio_comprimento / fio_area);
+    printf("Resistencia: %.9f Ohm", s_resistencia);
+  }else if (e_material == 4){
+    resistividade = (2.92*(pow(10,-6))) * (1+(0.039*(e_temperatura - 20)));
+    s_resistencia = resistividade * (fio_comprimento / fio_area);
+    printf("Resistencia: %.9f Ohm", s_resistencia);
+  }else if (e_material == 5){
+    resistividade = (5.6*(pow(10,-6))) * (1+(0.045*(e_temperatura - 20)));
+    s_resistencia = resistividade * (fio_comprimento / fio_area);
+    printf("Resistencia: %.9f Ohm", s_resistencia);
+  }else{
+    printf("Material Inválido");
+//Fluxograma: Processo de desenvolvimento: Fim
+  }
+  
+   return 0;
+}
