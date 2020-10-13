@@ -1,1 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+  
+int main() 
+{
 
+//Fluxograma: Derivação de variaveis: Início
+ int n; 
+ int r; 
+ int i; 
+//Fluxograma: Derivação de variaveis: Fim
+
+//Fluxograma: Entrada de dados: Início
+ printf("Digite o numero: ");
+ scanf("%d", &n);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Processo Desenvolvimento: Início
+ for(i = 3; i >= 0; i--) {
+ 
+    r = n >> i;
+         
+    if(r & 1) {
+        printf("1");
+    } else {
+        printf("0");
+    }
+ }
+//Fluxograma: Processo Desenvolvimento: Fim
+  
+ printf("\n");
+  
+return 0;
+}
