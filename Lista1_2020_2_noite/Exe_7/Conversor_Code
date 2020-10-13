@@ -1,1 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
 
+int main() 
+{
+  
+//Fluxograma: Derivação de variaveis: Início
+  float e_resistencia_R1, e_resistencia_R2, e_resistencia_R3, e_resistencia_R4, s_resistencia_equivalente, s_resistencia_equivalente_1;
+//Fluxograma: Derivação de variaveis: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Entre com o valor da Resistência R1:\n");
+  scanf("%f", &e_resistencia_R1);
+
+  printf("Entre com o valor da Resisstência R2:\n");
+  scanf("%f", &e_resistencia_R2);
+
+  printf("Entre com o valor da Resistência R3:\n");
+  scanf("%f", &e_resistencia_R3);
+
+  printf("Entre com o valor da Resistência R4:\n");
+  scanf("%f", &e_resistencia_R4);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Processo Desenvolvimento: Início
+  s_resistencia_equivalente = e_resistencia_R1 + e_resistencia_R2 + e_resistencia_R3 + e_resistencia_R4;
+
+  printf("O valor da Resistência Equivalente é: %.2f", s_resistencia_equivalente);
+
+  return 0;
+}
