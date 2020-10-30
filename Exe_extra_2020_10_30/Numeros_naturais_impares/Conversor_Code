@@ -1,1 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+int impar(int i);
+
+int main(void) {
+  int i;
+
+  printf("Insira um número: ");
+  scanf("%d", &i);
+
+  impar(i);
+}
+ int impar(int i)
+  {
+
+    int n;
+
+    if(i >= 0){
+      printf("Números Ímpares: ");
+      for (n=0; n<=i; n++){
+        if(n%2 == 1)
+        printf("\t %d", n);
+        }
+
+    }
+  return 0;
+}
