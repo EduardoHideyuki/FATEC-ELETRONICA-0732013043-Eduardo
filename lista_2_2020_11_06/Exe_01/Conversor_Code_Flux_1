@@ -1,1 +1,37 @@
+#include <stdio.h>
 
+int main(void) {
+
+//Fluxograma: Derivação de variáveis: Início
+  float e_nmr_a, e_nmr_b, me;
+//Derivação de variáveis: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Entre com o valor de A: ");
+  scanf("%f", &e_nmr_a);
+  printf("Entre com o valor de B: ");
+  scanf("%f", &e_nmr_b);
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma: Desvio: Início
+  if(e_nmr_a > e_nmr_b)//Se a condição: A é maior que B?
+  {// Se sim:
+    me = e_nmr_a;
+  }else{//Se não:
+    me = e_nmr_b;
+  }
+//Fluxograma: Desvio: Fim
+
+//Fluxograma: Condição: Início
+  while((e_nmr_a/me)>0 && (e_nmr_b/me)>0)//Se a condição: A dividido por me for maior que 0 e B dividido por me for maior que 0: For verdadeira:
+  {
+    me = me -1;
+  }//Se for falsa:
+//Fluxograma: Condição: Fim
+
+//Fluxograma: Conclusão: Início
+printf("Me: %.1f", me);
+//Fluxograma: Conclusão: Fim
+
+  return 0;
+}
