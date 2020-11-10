@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main(void) {
+  
+//Fluxograma: Declarção de variáveis: Início
+  float e_nmr_1, e_nmr_2, mmc, valor_aux;
+//Fluxograma: Declaração de variáveis: Fim
+
+//Fluxograma: Entrada de dados: Início
+  printf("Digite o primeiro valor: ");
+  scanf("%f", &e_nmr_1);
+
+  printf("Digite o segundo valor: ");
+  scanf("%f", &e_nmr_2);
+
+  mmc=1;
+  valor_aux=2;
+//Fluxograma: Entrada de dados: Fim
+
+//Fluxograma:Desvio: Início
+  while((e_nmr_1 > 1) && (e_nmr_2 > 1))//Se a condição: Número 1 for maior que 1 e o número 2 for maior que 1 for verdadeira:
+    {
+      while(((e_nmr_1 / valor_aux) > 0) || ((e_nmr_2 / valor_aux) > 0))//Se a condiçao: Número 1 dividido por valor_aux for maior que 0 e o número 2 dividido por valor_aux for maior que 0 for verdadeira:
+      { valor_aux ++; }
+        if((e_nmr_1 / valor_aux)==0)//Se a condição: Número 1 dividido pelo valor_aux for igual a 0?
+        {//Se sim:
+          e_nmr_1 --;
+        }if((e_nmr_2 / valor_aux)==0)//Se a condição: Número 2 dividido pelo valor_aux for igual a 0?
+        {//Se sim:
+          e_nmr_2 --;
+        }
+        mmc = mmc * valor_aux;
+
+  }
+    printf("MMC: %.1f", mmc);
+  return 0;
+}
