@@ -3,15 +3,15 @@
 int main(void) {
   
 //Fluxograma: Declarção de variáveis: Início
-  float e_nmr_1, e_nmr_2, mmc, valor_aux;
+  int e_nmr_1, e_nmr_2, mmc, valor_aux;
 //Fluxograma: Declaração de variáveis: Fim
 
 //Fluxograma: Entrada de dados: Início
   printf("Digite o primeiro valor: ");
-  scanf("%f", &e_nmr_1);
+  scanf("%d", &e_nmr_1);
 
   printf("Digite o segundo valor: ");
-  scanf("%f", &e_nmr_2);
+  scanf("%d", &e_nmr_2);
 
   mmc=1;
   valor_aux=2;
@@ -32,6 +32,6 @@ int main(void) {
         mmc = mmc * valor_aux;
 
   }
-    printf("MMC: %.1f", mmc);
+    printf("MMC: %.1d", mmc);
   return 0;
 }
