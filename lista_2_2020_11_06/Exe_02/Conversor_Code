@@ -1,1 +1,46 @@
+#include <stdio.h>
 
+int main(void) {
+  
+//Declaração de variáveis
+  float a11, a12, a21, a22, b1, b2, det, x1,x2;
+  int aux [6];
+
+//Entrada de dados
+  printf("Complete a primeira equação do sistema 2x2 onde aparecem: a, b ,c:\n");
+  printf("(a)x +- (b)y = (c)\n");
+  scanf("%f\n", &a11);
+  scanf("%f\n", &a12);
+  scanf("%f", &b1);
+
+  printf("Agora complete a segunda equação do sistema 2x2 onde aparecem: d, e, f:\n");
+  scanf("%f\n", &a21);
+  scanf("%f\n", &a22);
+  scanf("%f", &b2);
+
+//Contextualizando o problema
+  printf("Seu sistema é:\n");
+  printf("{%.0fx + %.0fy = %.0f\n", a11, a12, b1);
+  printf("{%.0fx + %.0fy = %.0f\n", a21, a22, b2);
+
+//Calcular determinante 2x2 por método de Cramer
+  det = (a11 * a22) - (a12 * a21);
+
+//Verificando quantas soluções tem o sistema
+  if ((a21 == a22) && (a11 == a12) && (b1 == b2)){
+    printf("A Matriz possui infinitas soluções!");
+    return 0;
+  }
+
+//Verificando se o sistema tem uma solução ou nenhuma solução
+  if( det == 0){
+    printf("A Matriz não tem solução!\n");
+  }else{
+    x1 = ((b1 * a22) - (b2 * a12)) / det;
+    x2 = ((b2 * a11) - (b1 * a21)) / det;
+  
+  printf("x = %.2f\n y = %.2f",x1, x2);
+  }
+  
+  return 0;
+}
