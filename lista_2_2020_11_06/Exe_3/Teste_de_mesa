@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T22:38:25.452Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="SAZ2Nrax8yR5grW_byZj" version="13.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-12T22:40:48.946Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="jFWJ1OVBz9DFUGvg7L7O" version="13.9.6" type="github">
   <diagram id="cUtl0kGWlLMYDNdcjpPK" name="Page-1">
     <mxGraphModel dx="2674" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="QB5H8uA2vRnK1GFcMUMe-1" value="Sequencia:&lt;br&gt;1)derivar variáveis&lt;br&gt;2)Numero de menor valor&lt;br&gt;3)Numero de maior valor&lt;br&gt;4)saber se o primeiro numero é menor que o segundo numero&lt;br&gt;5)realizar conta da soma&lt;br&gt;6)realizar a conta da multiplicação&lt;br&gt;7) mostrar os numeros pares" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="430" y="70" width="350" height="120" as="geometry" />
+          <mxGeometry x="730" y="70" width="350" height="120" as="geometry" />
         </mxCell>
         <mxCell id="QB5H8uA2vRnK1GFcMUMe-2" value="3) A)" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="390" y="70" width="40" height="20" as="geometry" />
+          <mxGeometry x="670" y="70" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QB5H8uA2vRnK1GFcMUMe-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QB5H8uA2vRnK1GFcMUMe-3" target="QB5H8uA2vRnK1GFcMUMe-4">
           <mxGeometry relative="1" as="geometry" />
