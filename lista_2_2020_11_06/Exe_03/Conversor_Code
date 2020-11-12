@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) {
+  
+//Derivação de variáveis
+  int nmr[3], somapar=0, cont=0, par=1;
+
+//Entrada de dados
+  printf("Entre com o número de menor valor: ");
+  scanf("%d", &nmr[1]);
+  printf("Entre com o número de maior valor: ");
+  scanf("%d", &nmr[2]);
+
+//Processo de desenvolvimento
+  if (nmr[1]<nmr[2]){
+    for(cont = 1; cont <= nmr[2]; cont++){
+      if(cont%2==0){
+        somapar = somapar + cont;
+        par = par * cont;
+        }
+  }
+ }else{
+   printf("Número de maior valor não pode ser maior que o número de menor valor!");
+   return 0;
+ }
+//Conclusão
+ printf("A soma dos números pares nesse intervalo é %d\n", somapar);
+    printf("A multiplicação dos números pares nesse intervalo é %d\n", par);
+  return 0;
+}
