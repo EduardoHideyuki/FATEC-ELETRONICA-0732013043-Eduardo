@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  
+//Declarção de variáveis
+  int a, b, c, contador=0;
+
+//Processo de desenvolvimento
+for ( a = 1; a <= 9; a++)
+ for ( b = 0; b <= 9; b++)
+ for (c = 0; c <= 9; c++)
+ printf ("%d = (%d*%d*%d)\n" , a*b*c , a , b , c );
+
+  return 0;
+}
