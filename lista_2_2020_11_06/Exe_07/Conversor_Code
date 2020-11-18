@@ -1,1 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+int main() 
+{
+  
+//Declaração de variáveis
+  int decimal, binario=0, i, j=1, temp;
+  float one_or_two;
+
+//Entrada de dados
+  printf("Insira o número em decimal: ");
+  scanf("%d", &decimal);
+
+  printf("Para binário digite 1,\nPara octal digite 2:\n");
+  scanf("%f", &one_or_two);
+
+//Processo de desenvolvimento
+  if(one_or_two == 1){
+    if(decimal == 1){
+      printf("%d\n", decimal);
+    }else{
+      temp=decimal;
+      while (temp!=0){
+        i=temp%2;
+        binario = binario + (i*j);
+        temp=temp/2;
+        j=j*10;
+      }printf("O número decimal em binário é: %d", binario);
+    }
+  }else if(one_or_two == 2){
+    int octal[8], i=0, a;
+
+      if(decimal<=7){
+        octal[i] = decimal;
+        printf("%d", octal[i]);
+      }else{
+        while(decimal>=8){
+          octal[i] = decimal%8;
+          decimal = decimal/8;
+          i++;
+        }octal[i] = decimal;
+        int j=0;
+        for(j=i;j>=0;j--){
+        printf("%d", octal[j]);
+      }
+  }
+  }
+  return 0;
+}
