@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 int main(void) {
-  int s_led, s_led_direito, s_led_esquerdo, s_led_alerta;
+  int s_led;
   float s_led_aux;
   //s_led = 0: apagado
   //s_led = 1: aceso
