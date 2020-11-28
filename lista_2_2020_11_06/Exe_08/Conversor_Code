@@ -1,1 +1,22 @@
+#include <stdio.h>
+#include <unistd.h>
 
+int main(void) {
+  int s_led;
+  //s_led = 0: apagado
+  //s_led = 1: aceso
+
+  s_led = 0;
+  while (1)
+  {
+    if(s_led ==0){
+      s_led = 1;
+      printf("LED ACESO\n");
+    }else{
+      s_led = 0;
+      printf("LED APAGADO\n");
+    }
+    sleep(1);
+  }
+  return 0;
+}
